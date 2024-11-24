@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon"> -->
+</head>
+
+<body>
+    <div id="box">
+        
+        <form id="formRange" action="">
+            <div id="gerador_de_senha">
+                <P>GERADOR DE SENHAS</P>
+            </div>
+    
+            <div id="data_hora">
+                <p id="data">21/11/2024</p>
+                <p id="hora">16:56:13</p>
+            </div>
+          
+            <div class="div_tam_qua" id="div_range_tamanho">
+                <label class="l_div" for="range_tamanho">TAMANHO: </label>
+                <input class="div_tam" type="range" id="ipt_range_tamanho" min="0" max="128" step="2">
+                <p class="p_div" id="p_tamanho_range">11</p>
+            </div>
+          
+            <div class="div_tam_qua" id="div_range_quantidade">
+                <label class="l_div" for="range_quantidade">QUANTIDADE: </label>
+                <input class="div_qua" type="range" id="ipt_range_quantidade" min="0" max="100">
+                <p class="p_div" id="p_quantidade_range">7</p>
+            </div>
+           
+            <div id="div_checkbox">
+                <div id="l_selec_op">
+                    <label id="descr_text" for="minusculo"> Selecione ao menos uma opção... !</label>
+                    <!-- <label class="descr_text" for="minusculo"> SELECIONE AO MENOS UMA OPÇÃO...!</label> -->
+                </div>
+
+                <div>
+                    <input type="checkbox" name="binario" id="binario">
+                    <label class="descr_text" for="numeros"> Binario (0-1)</label>
+
+                </div>
+                <div>
+                    <input type="checkbox" name="numeros" id="numeros">
+                    <label class="descr_text" for="numeros"> Decimal (0-9)</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="minusculo" id="minusculo">
+                    <label class="descr_text" for="minusculo"> Minúsculas (a-z)</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="maiusculo" id="maiusculo">
+                    <label class="descr_text" for="maiusculo"> Maiúsculas (A-Z)</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="especiais" id="especiais">
+                    <label class="descr_text" for="especiais"> Especiais (!@#$%¨&amp;*()_-+=`´{[^~}]|\&lt;,&gt;.:;?/)</label>
+                </div>
+            </div>
+            <div id="div_textarea">
+                <label id="l_textarea" for="resultado"># SENHA GERADA #</label>
+                <textarea name="senha_gerada" id="senha_gerada"></textarea>
+            </div>
+
+            <div id="botoes">
+                <input type="reset" class="reset_submit_copy" id="reset" value="Limpar">
+                <input type="submit" class="reset_submit_copy" id="submit" value="Gerar">
+                <input type="button" class="reset_submit_copy" id="copiar" value="Copiar">
+            </div>
+
+
+
+        </form>
+        <div>
+        </div>
+
+        <div>
+
+        </div>
+        <script src="js/script.js"></script>
+
+
+
+
+</body>
+
+</html>
+<!-- Recomendações:
+
+- Use uma combinação de letras, números e símbolos.
+- Evite usar informações pessoais (nome, data de nascimento, etc.).
+- Use pelo menos 12 caracteres.
+- Não use a mesma senha para múltiplos sites ou aplicativos.
+
+Padrões de senha:
+
+- Senha forte: 12+ caracteres, letras, números e símbolos.___
+- Senha média: 8-11 caracteres, letras e números.
+- Senha fraca: < 8 caracteres, apenas letras ou números. -->
